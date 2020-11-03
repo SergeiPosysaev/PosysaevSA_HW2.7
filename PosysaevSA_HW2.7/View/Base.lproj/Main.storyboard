@@ -17,12 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="d1s-nQ-PuO">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" textLabel="K7w-WT-h3t" detailTextLabel="XQl-A7-UPt" style="IBUITableViewCellStyleSubtitle" id="d1s-nQ-PuO">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d1s-nQ-PuO" id="Wfv-5k-Gzv">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K7w-WT-h3t">
+                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XQl-A7-UPt">
+                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="El9-Fu-AUR" kind="show" identifier="showDetail" id="xI1-Jp-RLF"/>
@@ -41,30 +57,48 @@
             </objects>
             <point key="canvasLocation" x="1068" y="-319"/>
         </scene>
-        <!--View Controller-->
+        <!--Personal Contact View Controller-->
         <scene sceneID="YDF-we-bX1">
             <objects>
-                <viewController id="El9-Fu-AUR" sceneMemberID="viewController">
+                <viewController id="El9-Fu-AUR" customClass="PersonalContactViewController" customModule="PosysaevSA_HW2_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v8e-cv-u31">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFz-8g-0LC">
-                                <rect key="frame" x="186" y="438" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="uhb-i2-6ux">
+                                <rect key="frame" x="16" y="140" width="382" height="350"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="person.fill.questionmark.rtl" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WgO-Si-Xd2">
+                                        <rect key="frame" x="0.0" y="0.5" width="382" height="264"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFz-8g-0LC">
+                                        <rect key="frame" x="0.0" y="329" width="382" height="21"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="giH-Ta-Z6E"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X2n-XC-HJ9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uhb-i2-6ux" firstAttribute="leading" secondItem="X2n-XC-HJ9" secondAttribute="leading" constant="16" id="5Gy-Hi-R6j"/>
+                            <constraint firstItem="uhb-i2-6ux" firstAttribute="top" secondItem="X2n-XC-HJ9" secondAttribute="top" id="LYs-Le-yX4"/>
+                            <constraint firstItem="X2n-XC-HJ9" firstAttribute="trailing" secondItem="uhb-i2-6ux" secondAttribute="trailing" constant="16" id="ZOF-fV-AFY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7j8-RK-6ok"/>
+                    <connections>
+                        <outlet property="contactLabel" destination="fFz-8g-0LC" id="xRT-Tx-nT0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMh-cL-aO0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838" y="-319"/>
+            <point key="canvasLocation" x="1837.68115942029" y="-319.41964285714283"/>
         </scene>
         <!--Contacts group-->
         <scene sceneID="Fro-PD-Ynw">
@@ -89,7 +123,7 @@
                             <outlet property="delegate" destination="gn5-9M-HDu" id="5XH-DF-ZdD"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Contacts group" image="person.3" catalog="system" id="Rk7-f8-asz"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Contacts group" image="person.3" catalog="system" id="Rk7-f8-asz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibd-Gd-Q3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,12 +145,12 @@
             </objects>
             <point key="canvasLocation" x="-526" y="-42"/>
         </scene>
-        <!--Contactcs list-->
+        <!--Contacts list-->
         <scene sceneID="4Qq-2Y-7Q4">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5XY-Jr-e6Y" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Contactcs list" id="uKN-Jq-Jgj"/>
+                    <navigationItem key="navigationItem" title="Contacts list" id="uKN-Jq-Jgj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hbO-lv-1dw">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -135,6 +169,7 @@
     <resources>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="person.fill.questionmark.rtl" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

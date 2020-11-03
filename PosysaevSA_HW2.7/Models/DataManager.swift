@@ -11,6 +11,18 @@ class DataManager {
     let phoneNumbers: [String]
     let emails: [String]
     
+    subscript(index: Int) -> Person? {
+        switch index {
+        case 0..<firstNames.count:
+            return  Person(firstName: self.firstNames[index],
+                   lastName: self.lastNames[index],
+                   phoneNumber: self.phoneNumbers[index],
+                   email: self.emails[index])
+        default:
+            return nil
+        }
+    }
+    
     init() {
         firstNames = ["John", "Woody", "Harrison", "Robin", "Robert",
                       "Stanly", "Clint", "Steven", "Morgan", "Denzel"]
