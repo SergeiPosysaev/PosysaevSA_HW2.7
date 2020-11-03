@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Contacts-->
         <scene sceneID="ICg-VG-GbT">
             <objects>
                 <tableViewController id="Q8s-oy-cQp" customClass="ContactsListViewController" customModule="PosysaevSA_HW2_7" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.3.fill" catalog="system" id="TyJ-VP-JFl"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vU6-HO-tBZ"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="vU6-HO-tBZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLu-3K-OeT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,14 +93,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibd-Gd-Q3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="335"/>
+            <point key="canvasLocation" x="1080" y="328"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2xZ-Qz-68i">
             <objects>
                 <navigationController id="lfk-lq-1Ob" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IqD-AM-Ge6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="IqD-AM-Ge6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -111,13 +111,14 @@
             </objects>
             <point key="canvasLocation" x="-526" y="-42"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Contactcs list-->
         <scene sceneID="4Qq-2Y-7Q4">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5XY-Jr-e6Y" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="uKN-Jq-Jgj"/>
+                    <navigationItem key="navigationItem" title="Contactcs list" id="uKN-Jq-Jgj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hbO-lv-1dw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

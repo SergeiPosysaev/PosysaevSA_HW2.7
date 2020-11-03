@@ -6,5 +6,27 @@
 //
 
 class DataManager {
+    let firstNames: [String]
+    let lastNames: [String]
+    let phoneNumbers: [String]
+    let emails: [String]
     
+    init() {
+        firstNames = ["John", "Woody", "Harrison", "Robin", "Robert",
+                      "Stanly", "Clint", "Steven", "Morgan", "Denzel"]
+        
+        lastNames = ["Moretz", "Allen", "Williams", "Cage", "Spielberg",
+                     "Freeman", "Ford", "Washington", "Eastwood", "Hoffman"]
+        
+        phoneNumbers = ["+1 (101) 111-11-11", "+1 (101) 222-11-11",
+                        "+1 (101) 111-22-11", "+1 (101) 111-11-22",
+                        "+1 (101) 333-11-11", "+1 (101) 111-33-11",
+                        "+1 (101) 111-11-33", "+1 (101) 444-11-11",
+                        "+1 (101) 111-44-11", "+1 (101) 111-11-44"]
+        
+        emails = ["moretz@mail.ru", "allen@mail.ru", "williams@mail.ru",
+                  "cage@mail.ru", "ford@mail.ru", "freeman@mail.ru",
+                  "hoffman@mail.ru", "spielberg@mail.ru", "eastwood@mail.ru",
+                  "washington@mail.ru"]
+    }
 }
