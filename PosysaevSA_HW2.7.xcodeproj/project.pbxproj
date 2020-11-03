@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		F90D755125515EDE002002E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D755025515EDE002002E8 /* AppDelegate.swift */; };
 		F90D755325515EDE002002E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D755225515EDE002002E8 /* SceneDelegate.swift */; };
-		F90D755525515EDE002002E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D755425515EDE002002E8 /* ViewController.swift */; };
 		F90D755825515EDE002002E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90D755625515EDE002002E8 /* Main.storyboard */; };
 		F90D755A25515EDF002002E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90D755925515EDF002002E8 /* Assets.xcassets */; };
 		F90D755D25515EDF002002E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90D755B25515EDF002002E8 /* LaunchScreen.storyboard */; };
+		F90D7570255160F7002002E8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D756F255160F7002002E8 /* Person.swift */; };
+		F90D757325516125002002E8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D757225516125002002E8 /* DataManager.swift */; };
+		F90D7579255169F2002002E8 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D7578255169F2002002E8 /* ContactsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F90D754D25515EDE002002E8 /* PosysaevSA_HW2.7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PosysaevSA_HW2.7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90D755025515EDE002002E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F90D755225515EDE002002E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F90D755425515EDE002002E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F90D755725515EDE002002E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F90D755925515EDF002002E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F90D755C25515EDF002002E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F90D755E25515EDF002002E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F90D756F255160F7002002E8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F90D757225516125002002E8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F90D7578255169F2002002E8 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		F90D754F25515EDE002002E8 /* PosysaevSA_HW2.7 */ = {
 			isa = PBXGroup;
 			children = (
-				F90D755025515EDE002002E8 /* AppDelegate.swift */,
-				F90D755225515EDE002002E8 /* SceneDelegate.swift */,
-				F90D755425515EDE002002E8 /* ViewController.swift */,
-				F90D755625515EDE002002E8 /* Main.storyboard */,
-				F90D755925515EDF002002E8 /* Assets.xcassets */,
-				F90D755B25515EDF002002E8 /* LaunchScreen.storyboard */,
-				F90D755E25515EDF002002E8 /* Info.plist */,
+				F90D756725515F21002002E8 /* Resources */,
+				F90D756925515F57002002E8 /* Media */,
+				F90D756625515F08002002E8 /* Models */,
+				F90D756A25515F62002002E8 /* Controllers */,
+				F90D756C25515F78002002E8 /* View */,
 			);
 			path = PosysaevSA_HW2.7;
+			sourceTree = "<group>";
+		};
+		F90D756625515F08002002E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F90D756F255160F7002002E8 /* Person.swift */,
+				F90D757225516125002002E8 /* DataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F90D756725515F21002002E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F90D755025515EDE002002E8 /* AppDelegate.swift */,
+				F90D755225515EDE002002E8 /* SceneDelegate.swift */,
+				F90D755E25515EDF002002E8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F90D756925515F57002002E8 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				F90D755925515EDF002002E8 /* Assets.xcassets */,
+				F90D755B25515EDF002002E8 /* LaunchScreen.storyboard */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		F90D756A25515F62002002E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F90D7578255169F2002002E8 /* ContactsListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F90D756C25515F78002002E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F90D755625515EDE002002E8 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F90D755525515EDE002002E8 /* ViewController.swift in Sources */,
+				F90D757325516125002002E8 /* DataManager.swift in Sources */,
 				F90D755125515EDE002002E8 /* AppDelegate.swift in Sources */,
+				F90D7570255160F7002002E8 /* Person.swift in Sources */,
 				F90D755325515EDE002002E8 /* SceneDelegate.swift in Sources */,
+				F90D7579255169F2002002E8 /* ContactsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V594626Y7H;
-				INFOPLIST_FILE = PosysaevSA_HW2.7/Info.plist;
+				INFOPLIST_FILE = PosysaevSA_HW2.7/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.ustlab-1c.PosysaevSA-HW2-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V594626Y7H;
-				INFOPLIST_FILE = PosysaevSA_HW2.7/Info.plist;
+				INFOPLIST_FILE = PosysaevSA_HW2.7/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.ustlab-1c.PosysaevSA-HW2-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
