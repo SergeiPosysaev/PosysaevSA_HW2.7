@@ -16,6 +16,7 @@
 		F90D757325516125002002E8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D757225516125002002E8 /* DataManager.swift */; };
 		F90D7579255169F2002002E8 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90D7578255169F2002002E8 /* ContactsListViewController.swift */; };
 		F9EF9DE92551B1A200416709 /* PersonalContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF9DE82551B1A200416709 /* PersonalContactViewController.swift */; };
+		F9EF9DEC2551DF2D00416709 /* ContactsByGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF9DEB2551DF2D00416709 /* ContactsByGroupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F90D757225516125002002E8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F90D7578255169F2002002E8 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 		F9EF9DE82551B1A200416709 /* PersonalContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactViewController.swift; sourceTree = "<group>"; };
+		F9EF9DEB2551DF2D00416709 /* ContactsByGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsByGroupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				F90D7578255169F2002002E8 /* ContactsListViewController.swift */,
 				F9EF9DE82551B1A200416709 /* PersonalContactViewController.swift */,
+				F9EF9DEB2551DF2D00416709 /* ContactsByGroupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				F90D757325516125002002E8 /* DataManager.swift in Sources */,
 				F90D755125515EDE002002E8 /* AppDelegate.swift in Sources */,
 				F90D7570255160F7002002E8 /* Person.swift in Sources */,
+				F9EF9DEC2551DF2D00416709 /* ContactsByGroupViewController.swift in Sources */,
 				F9EF9DE92551B1A200416709 /* PersonalContactViewController.swift in Sources */,
 				F90D755325515EDE002002E8 /* SceneDelegate.swift in Sources */,
 				F90D7579255169F2002002E8 /* ContactsListViewController.swift in Sources */,

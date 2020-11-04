@@ -25,10 +25,10 @@ class DataManager {
     
     init() {
         firstNames = ["John", "Woody", "Harrison", "Robin", "Robert",
-                      "Stanly", "Clint", "Steven", "Morgan", "Denzel"]
+                      "Stanly", "Clint", "Steven", "Morgan", "Denzel"].shuffled()
         
         lastNames = ["Moretz", "Allen", "Williams", "Cage", "Spielberg",
-                     "Freeman", "Ford", "Washington", "Eastwood", "Hoffman"]
+                     "Freeman", "Ford", "Washington", "Eastwood", "Hoffman"].shuffled()
         
         phoneNumbers = ["+1 (101) 111-11-11", "+1 (101) 222-11-11",
                         "+1 (101) 111-22-11", "+1 (101) 111-11-22",
