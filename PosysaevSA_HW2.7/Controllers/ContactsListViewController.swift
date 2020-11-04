@@ -17,6 +17,9 @@ class ContactsListViewController: UITableViewController {
         tabBarController?.navigationItem.title = "Contacts list"
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.navigationItem.title = "Contacts list"
+    }
 
     // MARK: - Table view data source
 

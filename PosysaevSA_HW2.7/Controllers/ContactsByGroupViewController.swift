@@ -20,6 +20,10 @@ class ContactsByGroupViewController: UITableViewController {
         
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.navigationItem.title = "Personal list"
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
