@@ -46,9 +46,6 @@ class ContactsByGroupViewController: UITableViewController {
             break
         }
         
-        
-        
-        
         return cell
     }
     
